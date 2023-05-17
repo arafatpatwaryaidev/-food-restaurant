@@ -67,7 +67,7 @@ section{
 .btn{
     display: inline-block;
     margin-top: 1rem;
-    padding: 1.7rem 1.8rem;
+    padding: 1.4rem 1.8rem;
     font-size: 1.7rem;
     cursor: pointer;
     color: $white;
@@ -476,8 +476,69 @@ animation:  fadeUp .4s linear;
             font-size: 1.8rem;
             color: $black;
     }
+ }
 }
+
+// about section
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    background: $light-bg;
+
+    .image{
+        flex: 1 1 40rem;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .content{
+        flex: 1 1 40rem;
+
+        span{
+            @include font(3rem)
+        }
+        .title{
+            font-size:3rem ;
+            padding-top: .5rem;
+            color: $black;
+        }
+        p{
+            font-size: 1.4rem;
+            padding: 1rem 0;
+            line-height: 2;
+            color: $light-color;
+        }
+
+        .icons-container{
+            margin-top: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+
+            .icons{
+                flex: 1 1 20rem;
+                border-radius: .5rem;
+                background: $white;
+                box-shadow: $box-shadow;
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+                padding: 2rem;
+
+                h3{
+                    font-size: 1.7rem;
+                    color: $black;
+                }
+            }
+        }
+    }
 }
+
+
 
 
 
