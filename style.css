@@ -34,6 +34,20 @@ section {
   padding: 2rem 9%;
 }
 
+.heading {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.heading span {
+  font-family: "Satisfy", cursive;
+  font-size: 3rem;
+  color: #27ae60;
+}
+.heading h3 {
+  color: #130f40;
+  font-size: 3rem;
+}
+
 .btn {
   display: inline-block;
   margin-top: 1rem;
@@ -436,6 +450,389 @@ section {
   color: #130f40;
 }
 
+.popular .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+.popular .box-container .box {
+  border-radius: 0.5rem;
+  position: relative;
+  background: #f5f3f3;
+  padding: 2rem;
+  text-align: center;
+}
+.popular .box-container .box .fa-heart {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 2.5rem;
+  color: #666;
+  cursor: pointer;
+}
+.popular .box-container .box .fa-heart:hover {
+  color: #27ae60;
+}
+.popular .box-container .box .image {
+  margin: 1rem 0;
+}
+.popular .box-container .box .image img {
+  height: 15rem;
+}
+.popular .box-container .box .content h3 {
+  font-size: 2rem;
+  color: #130f40;
+}
+.popular .box-container .box .content .stars {
+  padding: 1rem 0;
+  font-size: 1.7rem;
+}
+.popular .box-container .box .content .stars i {
+  color: gold;
+}
+.popular .box-container .box .content .stars span {
+  color: #666;
+}
+.popular .box-container .box .content .price {
+  font-size: 2rem;
+  color: #130f40;
+}
+.popular .box-container .box .content .price span {
+  font-size: 1.5rem;
+  color: #666;
+  text-decoration: line-through;
+}
+
+.banner .row-banner {
+  background: url("./Photo/row-banner.png") no-repeat;
+  height: 45rem;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.banner .row-banner .content {
+  position: absolute;
+  top: 50%;
+  left: 7%;
+  transform: translateY(-50%);
+}
+.banner .row-banner .content span {
+  font-family: "Satisfy", cursive;
+  font-size: 4rem;
+  color: #27ae60;
+  color: #130f40;
+}
+.banner .row-banner .content h3 {
+  font-size: 6rem;
+  color: red;
+  text-transform: uppercase;
+}
+.banner .row-banner .content p {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+.banner .grid-banner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+.banner .grid-banner .grid {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  height: 45rem;
+}
+.banner .grid-banner .grid:hover img {
+  transform: scale(1.2);
+}
+.banner .grid-banner .grid img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.banner .grid-banner .grid .content {
+  position: absolute;
+  top: 2rem;
+  padding: 0 2rem;
+  z-index: 1000;
+}
+.banner .grid-banner .grid .content.center {
+  text-align: center;
+  width: 100%;
+}
+.banner .grid-banner .grid .content.center span {
+  color: #666;
+}
+.banner .grid-banner .grid .content.center h3 {
+  color: #130f40;
+}
+.banner .grid-banner .grid .content span {
+  font-size: 2.5rem;
+  color: #fff;
+}
+.banner .grid-banner .grid .content h3 {
+  font-size: 3rem;
+  color: #fff;
+  padding-top: 0.5rem;
+}
+
+.menu .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+.menu .box-container .box {
+  border-radius: 0.5rem;
+  background: #f5f3f3;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.menu .box-container .box:hover {
+  background: #130f40;
+}
+.menu .box-container .box:hover .content h3 {
+  color: #fff;
+}
+.menu .box-container .box img {
+  height: 10rem;
+}
+.menu .box-container .box h3 {
+  font-size: 2rem;
+  color: #130f40;
+  padding-bottom: 0.5rem;
+}
+.menu .box-container .box .price {
+  font-size: 1.8rem;
+  color: #27ae60;
+}
+
+.order .icons-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+.order .icons-container .icons {
+  border-radius: 0.5rem;
+  padding: 2rem;
+  text-align: center;
+  background: #f5f3f3;
+}
+.order .icons-container .icons img {
+  height: 10rem;
+}
+.order .icons-container .icons h3 {
+  font-size: 2rem;
+  color: #130f40;
+  margin-top: 0.5rem;
+}
+.order form {
+  background: #f5f3f3;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+.order form .flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.order form .flex .inputBox {
+  width: 49%;
+  padding: 0.7rem 0;
+}
+.order form .flex span {
+  font-size: 1.7rem;
+  color: #666;
+}
+.order form .flex input,
+.order form .flex textarea {
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 1rem 1.2rem;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  text-transform: none;
+  color: #130f40;
+}
+.order form .flex textarea {
+  height: 20rem;
+  resize: none;
+}
+.order form .flex .map {
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+
+.blogs .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+.blogs .box-container .box {
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+.blogs .box-container .box:hover .image img {
+  transform: scale(1.2);
+}
+.blogs .box-container .box:hover .image h3 {
+  left: 1.5rem;
+}
+.blogs .box-container .box .image {
+  height: 25rem;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+.blogs .box-container .box .image h3 {
+  position: absolute;
+  top: 1rem;
+  left: -100%;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background: #fff;
+  color: #130f40;
+  font-size: 1.5rem;
+  z-index: 100;
+}
+.blogs .box-container .box .image h3 i {
+  color: #27ae60;
+  padding-right: 0.5rem;
+}
+.blogs .box-container .box .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.blogs .box-container .box .content {
+  padding: 1.5rem 2rem;
+  background: #f5f3f3;
+}
+.blogs .box-container .box .content .tags {
+  padding-bottom: 1rem;
+}
+.blogs .box-container .box .content .tags a {
+  font-size: 1.5rem;
+  color: #666;
+}
+.blogs .box-container .box .content .tags a i {
+  color: #27ae60;
+}
+.blogs .box-container .box .content h3 {
+  font-size: 2rem;
+  color: #130f40;
+}
+.blogs .box-container .box .content p {
+  font-size: 1.4rem;
+  color: #666;
+  padding: 1rem 0;
+  line-height: 2;
+}
+
+.footer {
+  background: #f5f3f3;
+}
+.footer .newsletter {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.footer .newsletter h3 {
+  font-size: 2.5rem;
+  color: #130f40;
+  padding-bottom: 1rem;
+}
+.footer .newsletter form {
+  width: 70rem;
+  margin: 1rem auto;
+  max-width: 70rem;
+  display: flex;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.footer .newsletter form input[type=email] {
+  height: 100%;
+  width: 100%;
+  padding: 1rem 1.2rem;
+  font-size: 1.6rem;
+  color: #130f40;
+  text-transform: none;
+}
+.footer .newsletter form input[type=submit] {
+  padding: 0 2rem;
+  font-size: 1.6rem;
+  color: #fff;
+  background: #27ae60;
+  cursor: pointer;
+}
+.footer .newsletter form input[type=submit]:hover {
+  background: #130f40;
+}
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+.footer .box-container .box h3 {
+  font-size: 2.2rem;
+  color: #130f40;
+  padding: 1rem 0;
+}
+.footer .box-container .box p {
+  font-size: 1.4rem;
+  color: #666;
+  padding: 1rem 0;
+}
+.footer .box-container .box a {
+  display: block;
+  font-size: 1.4rem;
+  color: #666;
+  padding: 1rem 0;
+}
+.footer .box-container .box a:hover {
+  color: #27ae60;
+}
+.footer .box-container .box a:hover i {
+  padding-right: 2rem;
+}
+.footer .box-container .box a i {
+  padding-right: 0.5rem;
+  color: #27ae60;
+}
+.footer .bottom {
+  padding-top: 1rem;
+  text-align: center;
+}
+.footer .bottom .share {
+  margin: 1.5rem 0;
+}
+.footer .bottom .share a {
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+  margin: 0 0.3rem;
+  color: #fff;
+  background: #27ae60;
+  padding: 1rem 2rem;
+}
+.footer .bottom .share a:hover {
+  background: #130f40;
+}
+.footer .bottom .credit {
+  font-size: 2rem;
+  color: #666;
+  padding: 1rem;
+}
+.footer .bottom .credit span {
+  color: #27ae60;
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
@@ -475,6 +872,9 @@ section {
     top: 0;
     right: 0;
     width: 130%;
+  }
+  .order form .flex .inputBox {
+    width: 100%;
   }
 }
 @media (max-width: 450px) {
