@@ -1,3 +1,3 @@
 # -food-restaurant
 Fast Food
-domain  https://dimitrapaskob.github.io/-food-restaurant/
+domain [https://dimitrafarabi.github.io/-food-restaurant/
